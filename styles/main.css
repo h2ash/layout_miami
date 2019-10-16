@@ -110,7 +110,8 @@ strong {
 
 .section {
   padding: 100px calc(50% - 470px);
-  position: relative; }
+  position: relative;
+  background-color: white; }
   .section:nth-child(even) {
     background-color: #EEEEEE; }
   .section__heading {
@@ -278,6 +279,8 @@ strong {
   color: #393939;
   padding: 24px 30px;
   background-color: #EEEEEE; }
+  .input_textarea {
+    height: 166px; }
   .input::-webkit-input-placeholder {
     text-transform: uppercase; }
   .input::-moz-placeholder {
@@ -326,5 +329,45 @@ strong {
       background-position: center;
       top: -34px;
       left: -22px; }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .contact__text {
+    width: 480px;
+    font-size: 24px;
+    line-height: 36px; }
+  .contact__form {
+    width: 380px; }
+
+@media screen and (max-width: 999px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .contact__text, .contact__form {
+      width: 100%; } }
+
+.footer {
+  height: 540px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("../images/footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .footer__logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 95px; }
 
 /*# sourceMappingURL=main.css.map */
